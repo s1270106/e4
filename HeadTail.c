@@ -18,5 +18,7 @@ int main(){
     }
   }
   printf("Heads: %d, Tails: %d\n",hcount,tcount);
+  if(hcount>tcount) printf("You won!\n");
+  else printf("You lost!\n");
   return 0;
 }
