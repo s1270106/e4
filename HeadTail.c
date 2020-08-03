@@ -3,6 +3,10 @@
 #include <time.h>
 int main(){
   int i,num,hcount=0,tcount=0;
+  char str[10];
+  printf("Who are you?\n");
+  scanf("%s",str);
+  printf("Hello,%s!\n",str);
   srand((unsigned int)time(NULL));
   printf("Tossing a coin...\n");
   for(i=0;i<3;i++){
@@ -18,7 +22,7 @@ int main(){
     }
   }
   printf("Heads: %d, Tails: %d\n",hcount,tcount);
-  if(hcount>tcount) printf("You won!\n");
-  else printf("You lost!\n");
+  if(hcount>tcount) printf("%s won!\n",str);
+  else printf("%s lost!\n",str);
   return 0;
 }
